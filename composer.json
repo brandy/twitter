@@ -24,7 +24,7 @@
         "psr/log": "^1.1 || ^2.0 || ^3.0",
         "nesbot/carbon": "^1.2 || ^2.26",
         "guzzlehttp/oauth-subscriber": "^0.6",
-        "php-di/php-di": "^6.2",
+        "php-di/php-di": "dev-laravel-9-fix",
         "kamermans/guzzle-oauth2-subscriber": "^1.0",
         "phpoption/phpoption": "^1.7",
         "vlucas/phpdotenv": "*",
@@ -36,6 +36,12 @@
         "orchestra/testbench": "3.8 - 7",
         "phpspec/prophecy-phpunit": "^2.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/brandy/PHP-DI"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Atymic\\Twitter\\": "src/"
